@@ -1,6 +1,6 @@
 const removeFromArray = function(array, ...args) {
     for (const arg of args) {
-        if (array.includes(arg)) {
+        while (array.includes(arg)) {
             array.splice(array.indexOf(arg), 1);
         }
     }
